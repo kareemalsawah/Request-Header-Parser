@@ -24,7 +24,7 @@ router.route('/')
   lang = lang.substr(0,lang.indexOf(","));
   var software = req.header('user-agent');
   software = software.substr(software.indexOf("(")+1,software.indexOf(")")-software.indexOf("(")-1);
-  console.log(software);
+  //console.log(software);
   res.json({ipaddress:ip,language:lang,software:software});
 });
 // more routes for our API will happen here
